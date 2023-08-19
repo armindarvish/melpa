@@ -25,6 +25,7 @@ services:
           cpus: '0.8'
     volumes:
       - /mnt/volume/melpa:/mnt/store/melpa
+      - /mnt/volume/package-build:/mnt/store/package-build
   logprocessor:
     build: ./logprocessor
     image: melpa/logprocessor:v2
